@@ -1,0 +1,151 @@
+<templateSet group="PHP">
+  <template name="chkd" value="&lt;?=($row['$VAR0$']=='$VAR1$')? 'selected': '';?&gt;" description="Check Box and Select" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="phpmailer" value="$mail             = new PHPMailer();&#10;$body             = $message;&#10;/*&#10;$mail-&gt;AddReplyTo(&quot;support@workforcevoice.com&quot;,&quot;support@workforcevoice.com&quot;);&#10;$mail-&gt;SMTPAuth   = true;                  // enable SMTP authentication&#10;$mail-&gt;Host       = &quot;host220.hostmonster.com&quot;; // sets the SMTP server&#10;$mail-&gt;Port       = 465;                    // set the SMTP port for the GMAIL server&#10;$mail-&gt;Username   = &quot;support@workforcevoice.com&quot;; // SMTP account username&#10;$mail-&gt;Password   = &quot;123456a&quot;;        // SMTP account password&#10;*/&#10;$mail-&gt;From       = &quot;support@workforcevoice.com&quot;;&#10;$mail-&gt;FromName   = &quot;Work Force Voice Admin&quot;;&#10;&#10;$mail-&gt;AddAddress($to);&#10;$mail-&gt;Subject    = $subject;&#10;//$mail-&gt;AltBody    = &quot;To view the message, please use an HTML compatible email viewer!&quot;; // optional, comment out and test&#10;$mail-&gt;MsgHTML($body);&#10;$mail-&gt;AddAttachment(dirname(__FILE__).&quot;/images/Bulletin_Example.docx&quot;);      // attachment&#10;if(!$mail-&gt;Send()) {&#10;  $mail_sent= &quot;Mailer Error: &quot; . $mail-&gt;ErrorInfo;&#10;} else {&#10;  $mail_sent=&quot;Message sent!&quot;;&#10;}" description="PHPMailer();" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="forloop" value="for ($i = 0; $i &lt; count($rows); $i++){&#10;    $i;&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="foreach" value="foreach($rows as $key=&gt;$val){&#10;    $key .' '. $val;&#10;}" description="foreach" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="die" value="die($SELECTION$);" description="die(); PHP" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="var_dump" value="var_dump($SELECTION$);" description="var_dump; PHP" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="php" value="&lt;?php&#10;$END$&#10;?&gt;" description="php" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="&lt;?" value="&lt;?=$END$;?&gt;" description="&lt;?=;?&gt;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="add_slashes" value="add_slashes($SELECTION$)" description="add_slashes PHP" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="intval" value="intval($SELECTION$)" description="intval PHP" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="JRequest::getVar" value="JRequest::getVar($SELECTION$)" description="JRequest::getVar" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="JRequest::getInt" value="JRequest::getInt($SELECTION$)" description="JRequest::getInt" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="CSS" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSP" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="ucwords" value="ucwords($SELECTION$)" description="ucwords" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="JRequest::getVar()" value="JRequest::getVar('$VAR0$')$END$" description="JRequest::getVar" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="JRequest::getInt()" value="JRequest::getInt('$VAR0$')$END$" description="JRequest::getInt" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pb" value="echo '&lt;br /&gt;';" description="PHP &lt;br /&gt;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="pp" value="echo '&lt;pre&gt;';print_r($_REQUEST $VAR0$);echo '&lt;/pre&gt;'; die('-----');" description="PHP &lt;pre&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="d" value="die(' --- Saqib Rajput --- ');" description="die" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="c/" value="# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++&#10;# $_VARS0$" description="Comments" toReformat="false" toShortenFQNames="true">
+    <variable name="_VARS0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="stl" value="strtolower($SELECTION$)" description="strtolower" toReformat="false" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="rr" value="returnWebService($_POST);" description="Excellence API return function." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="dd" value="if($_SERVER['REMOTE_ADDR'] == '192.168.5.197')&#10;{&#10;        echo '&lt;pre&gt;';print_r($_REQUEST);echo '&lt;/pre&gt;'; die('-----');&#10;}" description="die(); in LAN Project" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

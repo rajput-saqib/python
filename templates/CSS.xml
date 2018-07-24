@@ -1,0 +1,80 @@
+<templateSet group="CSS">
+  <template name="filter:blur" value="filter:blur(add=0, direction=200, strength=5)" description="filter:blur" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:chroma" value="ilter:chroma(color=#000000)" description="filter:chroma" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:dropshadow" value="filter:dropshadow(color=#9BAD71, offx=5, offy=5)" description="filter:dropshadow" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:fliph" value="filter:fliph" description="filter:fliph" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:flipv" value="filter:flipv" description="filter:flipv" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:glow" value="filter:glow(color=#9BAD71, strength=7)" description="filter:glow" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:gray" value="filter:gray" description="filter:gray" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:invert" value="filter:invert" description="filter:invert" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:mask" value="filter:mask(color=#000000)" description="filter:mask" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:shadow" value="filter:shadow(color=#9BAD71, direction=225)" description="filter:shadow" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:wave" value="filter:wave(add=0, freq=1, lightstrength=20, phase=100, strength=10)" description="filter:wave" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="filter:xray" value="filter:xray" description="filter:xray" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="expression" value="/* set the minimum width for IE 6 */&#10;#target_element {&#10;&#9;width: expression((document.body.clientWidth &lt; 335)? &quot;333px&quot; : &quot;auto&quot;); /* min-width for IE6 */&#10;&#9;min-width: 333px; /* min-width for all standards-compliant browsers */&#10;&#9;}" description="css expression" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

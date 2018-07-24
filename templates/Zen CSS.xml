@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Zen CSS">
+  <template name="olw:tn" value="outline-width:thin;" description="outline-width: thin;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>
+

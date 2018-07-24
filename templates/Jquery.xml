@@ -1,0 +1,271 @@
+<templateSet group="Jquery">
+  <template name="jqready" value="$(document).ready(function(){&#10;&#10;});" description=".ready" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqfun" value="(function($) {&#10;&#10;})(jQuery)" description="(function($) {  })(jQuery)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqradio" value="$('input:radio[name=keywordtype]:checked').val()" description="Checked Radio Value" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqajax" value=" $.ajax({                                                                         &#10;&#9;&#9;&#9;type: &quot;POST&quot;, url: &quot;&lt;?=ADMIN_JS_AJAX;?&gt;&quot;, data: &quot;&amp;img_id=&quot;+img_id+&quot;&amp;set_scroller=&quot;+status,&#10;&#9;&#9;&#9;complete: function(data){&#10;&#9;&#9;&#9;     //alert(data.responseText);&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}); " description="$.ajax({" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq#" value="$('#IdName')" description="#id" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq." value="$('.className')" description=".class" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqhide" value="$('#id').hide();" description="$('#id').hide();" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqshow" value="$('#id').show();" description="$('#id').show();" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jqchecked" value="$('#checkBox').attr('checked');" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_getJSON" value="jQuery.getJSON(&quot;check_entity.php?&quot;, { option: &quot;file&quot;, file_id: file_id, rand: Math.random() },&#10;                function(json) {&#10;                    jQuery('#' + div_2).val(json.shorturl);&#10;                });" description="" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_click_f" value="$('a').click(function(){&#10;            &#10;        });" description="$('a').click(function(){" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_add" value="$(&quot;p&quot;).add(&quot;div&quot;).addClass(&quot;widget&quot;);" description="add and addClass" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_animate" value="$(&quot;#go&quot;).click(function(){&#10;  $(&quot;#block&quot;).animate({&#10;    width: &quot;70%&quot;,&#10;    opacity: 0.4,&#10;    marginLeft: &quot;0.6in&quot;,&#10;    fontSize: &quot;3em&quot;,&#10;    borderWidth: &quot;10px&quot;&#10;  }, 1500 );&#10;});&#10;" description="animate" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:animated" value="$(&quot;#run&quot;).click(function(){&#10;      $(&quot;div:animated&quot;).toggleClass(&quot;colored&quot;);&#10;    });&#10;    function animateIt() {&#10;      $(&quot;#mover&quot;).slideToggle(&quot;slow&quot;, animateIt);&#10;    }&#10;" description=":animated and self callback" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr" value="$('#greatphoto').attr('alt', 'Beijing Brush Seller');" description="attr" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_appendTo" value="$(&quot;span&quot;).appendTo(&quot;#foo&quot;);" description="appendTo" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_Contains" value="$('a[hreflang|=&quot;en&quot;]')" description="[name|=&quot;value&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_Contains*" value="$('a[name*=&quot;man&quot;]')" description="[name*=&quot;man&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_Contains~" value="$('a[name~=&quot;man&quot;]')" description="[name~=&quot;man&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_Contains$" value="$('a[name$=&quot;value&quot;]')" description="[name$=&quot;value&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_aqual" value="$('a[name=&quot;value&quot;]')" description="[name=&quot;value&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_attr_start" value="$('input[name^=&quot;news&quot;]')" description="[name^=&quot;value&quot;]" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_before" value="$(&quot;&lt;div/&gt;&quot;).before(&quot;&lt;p&gt;&lt;/p&gt;&quot;);" description=".prepend() and .after(), .before() )" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_browser" value="$.browser.msie;&#10;$.browser.webkit;&#10;$.browser.mozilla;" description="jQuery.browser" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:button" value="$(&quot;:button&quot;)&#10;" description=":button" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_change" value="$(&quot;select&quot;).change(function () {&#10;          var str = &quot;&quot;;&#10;          $(&quot;select option:selected&quot;).each(function () {&#10;                str += $(this).text() + &quot; &quot;;&#10;              });&#10;          $(&quot;div&quot;).text(str);&#10;        })&#10;        .change();&#10;" description=".change()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:checkbox" value="$(&quot;form input:checkbox&quot;)" description=":checkbox" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:checked" value="$(&quot;input:checked&quot;)" description=":checked" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:contains" value="$(&quot;div:contains('John')&quot;)" description=":contains()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_css_set" value="$('#id').css(&quot;background-color&quot;,&quot;red&quot;);" description=".css()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_css_get" value="$('#id').css(&quot;background-color&quot;);" description=".css()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_delay" value="$('#foo').slideUp(300).delay(800).fadeIn(400);" description=".delay()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_delegate" value="$(&quot;body&quot;).delegate(&quot;p&quot;, &quot;click&quot;, function(){&#10;      $(this).after(&quot;&lt;p&gt;Another paragraph!&lt;/p&gt;&quot;);&#10;    });&#10;" description="delegate()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:disabled" value="$(&quot;input:disabled&quot;)" description=":disabled" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_each_self" value="$.each([52, 97], function(index, value) { &#10;  alert(index + ': ' + value); &#10;});&#10;/*---------------------------------------------------*/&#10;$.each( { name: &quot;John&quot;, lang: &quot;JS&quot; }, function(k, v){&#10;   alert( &quot;Key: &quot; + k + &quot;, Value: &quot; + v );&#10; });" description="self_each" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_each" value="$('li').each(function(index) {&#10;    alert(index + ': ' + $(this).text());&#10;  });" description="$('li').each()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_empty" value="$(&quot;p&quot;).empty();&#10;" description=".empty()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:empty" value="$(&quot;td:empty&quot;).text(&quot;Was empty!&quot;)" description=":empty" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:enabled" value="$(&quot;input:enabled&quot;)" description=":enabled" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_end" value="$(&quot;p&quot;).find(&quot;span&quot;).end().css(&quot;border&quot;, &quot;2px red solid&quot;);" description=".end()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_eq" value="$('li').eq(-2).css('background-color', 'red');" description="eq(1)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_:eq" value="$(&quot;td:eq(2)&quot;).css(&quot;color&quot;, &quot;red&quot;);" description=":eq(2)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_serialize" value="$('form').submit(function() {&#10;  alert($(this).serialize());&#10;  return false;&#10;});" description=".serialize()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_wrap" value="$(&quot;p&quot;).wrap(&quot;&lt;div&gt;&lt;/div&gt;&quot;);" description=".wrap()" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jq_refresh" value="jQuery.extend({&#10;    // Initialize the stack&#10;    refreshStack: [],&#10;&#10;    // Refresh functionality&#10;    refresh: function(o){&#10;        if ( jQuery.isFunction(o) ){&#10;            jQuery.refreshStack.push(o);&#10;        }else{&#10;            if ( typeof o !== 'object' ) o = document;&#10;            for ( i in jQuery.refreshStack ) jQuery.refreshStack[i](o);&#10;        }&#10;    },&#10;});" description="Refresh functionality" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

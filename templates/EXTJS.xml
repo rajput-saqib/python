@@ -1,0 +1,29 @@
+<templateSet group="EXTJS">
+  <template name="E_alert" value="Ext.Msg.alert('Alert','alert Message');" description="EXTJS" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="E_console" value="console.log($VAR0$);" description="EXTJS" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="E_get" value="Ext.get('$VAR0$');" description="EXTJS" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="E_getCmp" value="Ext.getCmp('$VAR0$');" description="EXTJS" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

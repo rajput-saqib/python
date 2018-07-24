@@ -1,0 +1,37 @@
+<templateSet group="My Tag">
+  <template name="text" value="&lt;input type=&quot;text&quot; name=&quot;$VAR0$&quot; id=&quot;$VAR0$&quot; /&gt;" description="input" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="password" value="&lt;input type=&quot;password&quot; name=&quot;$VAR0$&quot; id=&quot;$VAR0$&quot; /&gt;" description="input" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="hidden" value="&lt;input type=&quot;hidden&quot; name=&quot;$VAR0$&quot; id=&quot;$VAR0$&quot; /&gt;" description="input" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="select" value="&lt;select name=&quot;$VAR0$&quot; id=&quot;$VAR0$&quot;&gt;&#10;&lt;/select&gt;" description="select" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="texta" value="&lt;textarea name=&quot;$VAR0$&quot; id=&quot;$VAR0$&quot; cols=&quot;50&quot; rows=&quot;8&quot;&gt;&lt;/textarea&gt;" description="textarea" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

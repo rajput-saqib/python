@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b5d96986-132d-4191-9887-d3b4fbcced3f" name="excellence" url="http://www.excellencepro.local">
+        <fileTransfer mountedRoot="Z:\" accessType="MOUNT" />
+      </webServer>
+      <webServer id="fe8cd345-4cc7-484d-94c5-aa68b1ab509a" name="symphony" url="http://www.symphony.local">
+        <fileTransfer mountedRoot="Y:\" accessType="MOUNT" />
+      </webServer>
+    </option>
+    <sftpAdvancedGlobalOptions>
+      <SftpAdvancedOptions />
+    </sftpAdvancedGlobalOptions>
+  </component>
+</application>
+

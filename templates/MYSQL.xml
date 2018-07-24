@@ -1,0 +1,16 @@
+<templateSet group="MYSQL">
+  <template name="cd" value="CREATE DATABASE classicmodels;" description="CREATE DATABASE classicmodels;" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+  <template name="row number" value="SELECT @rownum:=@rownum+1 AS num, p.* FROM exl_groups p, (SELECT @rownum:=0) r" description="row number" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+      <option name="SQL" value="true" />
+    </context>
+  </template>
+</templateSet>

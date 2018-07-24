@@ -1,0 +1,28 @@
+<templateSet group="excellence">
+  <template name="cf_help" value="dropdowncontent.init(&quot;helpsize&quot;, &quot;right-top&quot;, 500, &quot;onclick&quot;);" description="Help Icon Js" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="cf_help_button" value="&lt;!-- Help help $VAR0$ --&gt;&#10;&lt;a href='javascript: void(0);' rel='help$VAR0$content' id='help$VAR0$'&gt;&lt;img src='&lt;?=$config_livesite_url . &quot;images/help_icon.png&quot;?&gt;' border=&quot;0&quot;/&gt;&lt;/a&gt;&#10;&lt;div id='help$VAR0$content' style=&quot;position:absolute; visibility: hidden; background-color: #FFFFFF; width:250px; border:2px #000000 solid; padding:2px;&quot;&gt;&#10;    &lt;?=LABEL_HELP_$VAR0$?&gt;&lt;br/&gt;&#10;&lt;div style=&quot;float:right; padding-right:5px; &quot;&gt;&#10;    &lt;img src=&quot;&lt;?=$config_livesite_url?&gt;/images/cross.gif&quot; onclick=&quot;dropdowncontent.hidediv('help$VAR0$content')&quot; style=&quot;cursor: pointer;&quot;&gt;&#10;&lt;/div&gt;&#10;&lt;/div&gt;&#10;&lt;!-- Help End--&gt;&#10;&#10;dropdowncontent.init(&quot;help$VAR0$&quot;, &quot;right-top&quot;, 500, &quot;onclick&quot;);&#10;$END$" description="Help icon" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="tooltip" value="&lt;!-- Start trigger element. a regular workable link --&gt;&#10;                            &amp;nbsp;&lt;img src='&lt;?=$config_livesite_url . &quot;images/help_icon.png&quot;?&gt;' border=&quot;0&quot; class=&quot;tooltip_link&quot;&gt;&#10;                            &lt;!-- tooltip element --&gt;&#10;                            &lt;div class=&quot;tooltip_small&quot;&gt;&#10;                                &lt;?=LABEL_RECURRENCE_DURATION_HELP?&gt;&#10;                            &lt;/div&gt;&#10;                            &lt;!-- END --&gt;" description="flowplayer.org" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="PDF" value="$reportQuery_F_\\\$VAR0$= &quot;SELECT cus_id,p.amount,count(cus_id) as count_F_\\\$VAR0$ FROM `tbl_packages` p,tbl_customer c WHERE p.amount IN(3.99,5.99,12) AND  p.paid_date BETWEEN  '&quot; . $from_date . &quot;' AND '&quot; . $to_date . &quot;'  AND p.cus_id=c.customer_id AND c.join_date BETWEEN '&quot; . $from_date2_new . &quot;' AND '&quot; . $to_date2_new . &quot;'  GROUP BY p.amount&quot;;&#10;    $rs_F_\\\$VAR0$ = mysql_query($reportQuery_F_\\\$VAR0$) or die(mysql_error());&#10;    $count_F_\\\$VAR0$ = 0;&#10;    $monthly_F_\\\$VAR0$ = 0;&#10;    if(mysql_num_rows($rs_F_\\\$VAR0$) &gt; 0){&#10;        while($row = mysql_fetch_array($rs_F_\\\$VAR0$)){&#10;            count_F_\\\$VAR0$ += $row['count_F_\\\$VAR0$'];&#10;            $monthly_F_\\\$VAR0$ += $row['amount'] * $row['count_F_\\\$VAR0$'];&#10;        }&#10;    }&#10;    $legal_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 0);&#10;    $loss_L_I_P_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 0);&#10;    $loss_L_I_I_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 0);&#10;    $loss_K_I_P_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 3.9);&#10;    $loss_K_I_I_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 0.24);&#10;    $linkfield_I_L_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 0.60);&#10;    $direct_D_F_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 1.45);&#10;&#10;    $total_C_D_P_F_\\\$VAR0$ = ($count_F_\\\$VAR0$ * 6.19);" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JSP" value="false" />
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

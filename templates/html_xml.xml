@@ -1,0 +1,30 @@
+<templateSet group="html/xml">
+  <template name="jsvoid" value="javascript: void(0);" description="javascript: void(0);" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="A" value="&lt;a href=&quot;$VAR0$&quot;&gt;$SELECTION$&lt;/a&gt;&#10;" description="href" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR0" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="strong" value="&lt;strong&gt;$SELECTION$&lt;/strong&gt;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+  <template name="jtag_ready" value=" $(document).ready(function() {&#10;    $SELECTION$ &#10;});" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTION" expression="" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="false" />
+    </context>
+  </template>
+</templateSet>

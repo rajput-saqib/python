@@ -1,0 +1,14 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <ignoreFiles list="*.hprof;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
+    <extensionMap>
+      <removed_mapping pattern="*.blade.php" type="Blade" />
+      <mapping pattern="photos.blade.php" type="Native" />
+      <mapping pattern="temp" type="PHP" />
+      <mapping pattern="5134241e673bf60d083fd85952cbea95" type="PLAIN_TEXT" />
+      <mapping ext="eot" type="PLAIN_TEXT" />
+      <mapping ext="bak" type="PLAIN_TEXT" />
+      <mapping ext="ttf" type="XML" />
+    </extensionMap>
+  </component>
+</application>
